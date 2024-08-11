@@ -1,0 +1,29 @@
+package in.lalit.main;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import in.lalit.util.HibernateUtil;
+
+public class LockingAppTest1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Session session = null;
+		Transaction transaction = null;
+		boolean flag = false;
+		
+		try {
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		finally {
+			HibernateUtil.closeSession(session);
+			HibernateUtil.closeSessionFactory();
+		}
+
+	}
+
+}

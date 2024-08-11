@@ -1,0 +1,5 @@
+package in.lalit.model;
+
+public class Account {
+
+}

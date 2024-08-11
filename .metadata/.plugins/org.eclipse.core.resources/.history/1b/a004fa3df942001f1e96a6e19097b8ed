@@ -1,0 +1,15 @@
+package in.lalit.main;
+
+import org.hibernate.cfg.Configuration;
+
+public class TestApp {
+	
+	public static void main(String[] args) {
+		// Step 1. Create a configuration object
+		Configuration cfg=new Configuration();
+		
+		//Step2. configure hibernate.cfg.xml file to Configuration object
+		cfg.configure();
+	}
+
+}

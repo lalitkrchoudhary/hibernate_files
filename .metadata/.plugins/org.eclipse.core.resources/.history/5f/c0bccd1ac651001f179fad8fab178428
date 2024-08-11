@@ -1,0 +1,23 @@
+package in.lalit.dao;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import org.hibernate.query.Query;
+
+import in.lalit.model.InsurancePolicy;
+import in.lalit.util.HibernateUtil;
+
+public class InsurancePolicyDaoImpl implements InsurancePolicyDao {
+
+	@Override
+	public List<InsurancePolicy> getPolicyByTenure(int start, int end) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
+	
+
+}

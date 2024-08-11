@@ -1,0 +1,36 @@
+package in.lalit.main;
+
+
+
+import java.io.Serializable;
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.query.NativeQuery;
+
+import in.lalit.util.HibernateUtil;
+
+
+
+public class TestApp {
+
+	public static void main(String[] args) {
+	
+		Session session= HibernateUtil.getSession();
+		
+		NativeQuery<Object[]> query = session.getNamedNativeQuery("GET_ALL_POLICY_TYPE");
+		query.setParameter("type", "half");
+		List<Object[]> list = query.getResultList();
+		list.forEach(row->{
+			for(Object obj: row) {
+				System.out.println(obj);
+			}
+			
+		});
+		
+		 
+	}
+}

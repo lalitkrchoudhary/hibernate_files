@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;InsurancePolicy.java&apos; to &apos;HB12NonSelectBulkOperationForInsetion/src/in.lalit.model&apos;&#x0A;- Original project: &apos;HB7CachingL2&apos;&#x0A;- Destination element: &apos;HB12NonSelectBulkOperationForInsetion/src/in.lalit.model&apos;&#x0A;- Original element: &apos;in.lalit.model.InsurancePolicy.java&apos;" description="Copy compilation unit" destination="=HB12NonSelectBulkOperationForInsetion/src&lt;in.lalit.model" element1="/src&lt;in.lalit.model{InsurancePolicy.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1722545581943" units="1" version="1.0"/>
+</session>

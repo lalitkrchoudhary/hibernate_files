@@ -1,0 +1,24 @@
+package in.lalit.main;
+
+import org.hibernate.cfg.Configuration;
+
+import com.mysql.cj.Session;
+import com.mysql.cj.xdevapi.SessionFactory;
+
+public class TestApp {
+	
+	public static void main(String[] args) {
+		// Step 1. Create a configuration object
+		Configuration cfg=new Configuration();
+		
+		//Step 2. configure hibernate.cfg.xml file to Configuration object
+		cfg.configure();
+		
+		//Step 3. create SessionFactory object
+		SessionFactory sessionFactory= cfg.buildSessionFactory();
+		
+		//Step 4. Get session object from SessionFactory
+		Session session= sessionFactory.openSession();
+	}
+
+}
