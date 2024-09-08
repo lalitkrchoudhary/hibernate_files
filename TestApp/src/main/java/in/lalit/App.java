@@ -7,7 +7,7 @@ public class App {
 	public void sayHello(String name) {
 		System.out.println("DemoApp.sayHello()");
 		for (int i = 1; i <= 10; i++)
-		System.out.println(name + " ");
+		System.out.println(name + " "); 
 		System.out.println("End of sayHello()");
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("Enter the message:: ");
